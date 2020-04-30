@@ -7,7 +7,8 @@ function reverse(str){
   const cleaned = arr.filter(word => word.length != '');
 
   //convert every other word to arr, reverse it and convert back to str
-  for(let i=1; i<cleaned.length; i+=2){
+  const size = cleaned.length;
+  for(let i=1; i<size; i+=2){
     cleaned[i] = cleaned[i].split('').reverse().join('');
   }
   
